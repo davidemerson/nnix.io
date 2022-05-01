@@ -47,7 +47,7 @@ sudo certbot certonly --manual --server https://acme-v02.api.letsencrypt.org/dir
   --preferred-challenges dns-01 \
   -d 'nnix.io' -d '*.nnix.io'
 
-Note: you'll have to deploy a couple TXT records as directed by Certbot for this.
+### Note: you'll have to deploy a couple TXT records as directed by Certbot for this.
 
 ## clone the repo
 git clone 
