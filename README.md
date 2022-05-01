@@ -55,6 +55,10 @@ git clone
 ## move the nginx conf
 sudo cp nginx.conf /etc/nginx/nginx.conf
 
+## check config and bump nginx
+sudo nginx -t
+sudo systemctl restart nginx.service
+
 ## clone go-ssb-room
 git clone https://github.com/ssb-ngi-pointer/go-ssb-room.git
 
@@ -65,8 +69,14 @@ go build
 ## copy binary to /usr/bin
 sudo cp server /usr/bin/ssb-server
 
-## involke ssb-server
-sudo ssb-server -https-domain nnix.io -lishttp localhost:3005
+## involke ssb-server, as a non-root user
+ssb-server -https-domain nnix.io
+
+## add service
+cp nnix.io/scuttlebutt.service /etc/systemd/system/
+
+## enable service
+
 
 ###
 next up, make that first user, and figure out how to get to the web interface, since you can't open another host on the same domain
