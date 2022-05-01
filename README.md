@@ -13,8 +13,6 @@ Messaging fit for your journey around the Chagos Archipelago.
              ____\__/___
        . - '             ' -.
       /                      \
-~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~
-  ~~~   ~~~~~   ~!~~   ~~ ~  ~ ~ ~~~
 
 ## launch an EC2 t4g.nano
 - running amazon linux 64-bit arm
