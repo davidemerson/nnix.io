@@ -50,16 +50,10 @@ sudo certbot certonly --manual --server https://acme-v02.api.letsencrypt.org/dir
 Note: you'll have to deploy a couple TXT records as directed by Certbot for this.
 
 ## clone the repo
+git clone 
 
 ## move the nginx conf
-
-###
-you got interrupted here where you were going to make a repo and clone that to the host for nginx configs before you build out go-ssb-room
-
-oh, and add that damn key to lastpass
-###
-
-
+sudo cp nginx.conf /etc/nginx/nginx.conf
 
 ## clone go-ssb-room
 git clone https://github.com/ssb-ngi-pointer/go-ssb-room.git
@@ -70,3 +64,10 @@ go build
 
 ## copy binary to /usr/bin
 sudo cp server /usr/bin/ssb-server
+
+## involke ssb-server
+sudo ssb-server -https-domain nnix.io -lishttp localhost:3005
+
+###
+next up, make that first user, and figure out how to get to the web interface, since you can't open another host on the same domain
+###
