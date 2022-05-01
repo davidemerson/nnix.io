@@ -75,7 +75,9 @@ ssb-server -https-domain nnix.io
 ## add service
 cp nnix.io/scuttlebutt.service /etc/systemd/system/
 
-## enable service
+## enable service & bump it
+sudo systemctl enable scuttlebutt.service
+sudo systemctl restart scuttlebutt.service
 
 ## make the first (admin) user
 cd go-ssb-room/cmd/insert-user
