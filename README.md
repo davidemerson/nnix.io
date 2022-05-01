@@ -24,9 +24,22 @@ sudo yum update
 ## install nginx from linux-extras
 sudo amazon-linux-extras install nginx1
 
-## install nginx, git, certbot and go
-sudo yum install git go certbot
+## install epel
+sudo amazon-linux-extras install epel
 
+## install nginx, git, certbot-nginx and go
+sudo yum install git go certbot-nginx
+
+## run certbot
+sudo certbot certonly --manual --server https://acme-v02.api.letsencrypt.org/directory \
+  --preferred-challenges dns-01 \
+  -d 'nnix.io' -d '*.nnix.io'
+
+Note: you'll have to deploy a couple TXT records as directed by Certbot for this.
+
+## clone the repo
+
+## move the nginx conf
 
 ###
 you got interrupted here where you were going to make a repo and clone that to the host for nginx configs before you build out go-ssb-room
