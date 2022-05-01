@@ -2,6 +2,20 @@
 
 Messaging fit for your journey around the Chagos Archipelago.
 
+        __ _.--..--._ _
+     .-' _/   _/\_   \_'-.
+    |__ /   _/\__/\_   \__|
+       |___/\_\__/  \___|
+              \__/
+              \__/
+               \__/
+                \__/
+             ____\__/___
+       . - '             ' -.
+      /                      \
+~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~
+  ~~~   ~~~~~   ~!~~   ~~ ~  ~ ~ ~~~
+
 ## launch an EC2 t4g.nano
 - running amazon linux 64-bit arm
 - 30GB gp2 storage on the root volume
