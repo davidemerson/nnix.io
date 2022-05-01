@@ -77,6 +77,13 @@ cp nnix.io/scuttlebutt.service /etc/systemd/system/
 
 ## enable service
 
+## make the first (admin) user
+cd go-ssb-room/cmd/insert-user
+go build
+./insert-user "@4vaDCN+OFE9qbabWoeI/BBtUDlIafsLdCxvqWzIA1Po=.ed25519"
+### obviously swap this in the quotes with your pubkey identity, this is mine
+
+## Log in and set up the server as you see fit!
 
 ###
 next up, make that first user, and figure out how to get to the web interface, since you can't open another host on the same domain
